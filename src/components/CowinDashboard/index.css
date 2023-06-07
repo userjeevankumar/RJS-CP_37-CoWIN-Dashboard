@@ -1,0 +1,18 @@
+/* Write your CSS here */
+.bg-container {
+  background-image: linear-gradient(#161625, #6c757d);
+  padding: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.img-head {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+}
+
+.img-website-logo {
+  height: 50px;
+  width: 50px;
+}
