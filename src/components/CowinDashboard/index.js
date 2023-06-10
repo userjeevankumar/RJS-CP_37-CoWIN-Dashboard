@@ -56,7 +56,7 @@ class CowinDashboard extends Component {
     } = fetchedData
 
     return (
-      <div>
+      <div className="containers">
         <VaccinationCoverage VaccinationCoverageData={last7DaysVaccination} />
         <VaccinationByGender vaccinationByGenderData={vaccinationByGender} />
         <VaccinationByAge vaccinationByAgeData={vaccinationByAge} />
@@ -75,8 +75,8 @@ class CowinDashboard extends Component {
     </div>
   )
 
-  renderLoading = () => (
-    <div data-testid="loader">
+  renderLoadingView = () => (
+    <div className="loader" data-testid="loader">
       <Loader type="ThreeDots" color="#ffffff" height={80} width={80} />
     </div>
   )
@@ -86,7 +86,7 @@ class CowinDashboard extends Component {
     switch (isLoading) {
       case cowinDashboardDetails.success:
         return this.renderCharts()
-      case cowinDashboardDetails.pending:
+      case cowinDashboardDetails.inProgress:
         return this.renderLoadingView()
       case cowinDashboardDetails.failure:
         return this.renderFailureView()

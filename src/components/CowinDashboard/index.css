@@ -4,6 +4,15 @@
   padding: 20px;
   padding-left: 60px;
   padding-right: 60px;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .img-head {
@@ -15,4 +24,8 @@
 .img-website-logo {
   height: 50px;
   width: 50px;
+}
+
+.loader {
+  text-align: center;
 }

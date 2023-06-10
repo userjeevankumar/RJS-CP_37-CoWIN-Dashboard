@@ -23,7 +23,7 @@ const VaccinationCoverage = props => {
   return (
     <div className="container">
       <h1 className="heading">Vaccination Coverage</h1>
-      <ResponsiveContainer width={1000} height={500}>
+      <ResponsiveContainer width={1000} height={300}>
         <BarChart
           data={VaccinationCoverageData}
           margin={{
@@ -49,8 +49,8 @@ const VaccinationCoverage = props => {
               padding: 30,
             }}
           />
-          <Bar dataKey="dose_1" name="Dose 1" fill="#1f77b4" barSize="20%" />
-          <Bar dataKey="dose_2" name="Dose 2" fill="#fd7f0e" barSize="20%" />
+          <Bar dataKey="dose_1" name="Dose 1" fill="#5a8dee" barSize="20%" />
+          <Bar dataKey="dose_2" name="Dose 2" fill="#f54394" barSize="20%" />
         </BarChart>
       </ResponsiveContainer>
     </div>
